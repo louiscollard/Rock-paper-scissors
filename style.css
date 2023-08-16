@@ -12,20 +12,56 @@ body {
 	height: 100vh;
 	overflow: hidden;
 	background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+	font-family: "Space Grotesk", sans-serif;
+	color: white;
 }
 
 .title {
 	text-align: center;
 	font-family: "Space Grotesk", sans-serif;
 	font-size: 50px;
+	margin-top: 150px;
+}
+
+.round {
+	font-size: 40px;
+}
+
+.result {
+	font-size: 25px;
 }
 
 .container {
 	display: flex;
-	justify-content: space-evenly;
+	flex-direction: column;
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
+	gap: 30px;
+}
+
+.container-infos {
+	display: flex;
+	gap: 70px;
+}
+
+.container-infos-player,
+.container-infos-computer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 30px;
+	gap: 30px;
+}
+
+.player-choice,
+.computer-choice {
+	font-size: 40px;
+}
+
+.container-btn {
+	display: flex;
+	gap: 60px;
 }
 
 .btn {
@@ -33,4 +69,13 @@ body {
 	width: 200px;
 	background-color: white;
 	border-radius: 10%;
+	font-size: 30px;
+	border: none;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.btn:hover {
+	transform: translateX(0);
+	transform: scale(0.96);
 }

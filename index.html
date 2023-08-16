@@ -7,13 +7,25 @@
 		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
-		<h1 class="title">ROCK PAPER SCISSORS</h1>
-		<div class="">Computer : 0</div>
-		<div class="">Player : 0</div>
 		<div class="container">
-			<button class="btn btn-rock">🪨</button>
-			<button class="btn btn-paper">📃</button>
-			<button class="btn btn-scissors">✂️</button>
+			<h1 class="title">ROCK PAPER SCISSORS</h1>
+			<h4 class="round"></h4>
+			<h6 class="result"></h6>
+			<div class="container-infos">
+				<div class="container-infos-player">
+					<div class="player-choice">?</div>
+					<div class="player-score">Player : 0</div>
+				</div>
+				<div class="container-infos-computer">
+					<div class="computer-choice">?</div>
+					<div class="computer-score">Computer : 0</div>
+				</div>
+			</div>
+			<div class="container-btn">
+				<button class="btn btn-rock">rock</button>
+				<button class="btn btn-paper">paper</button>
+				<button class="btn btn-scissors">scissors</button>
+			</div>
 		</div>
 		<script defer src="./script.js"></script>
 	</body>
